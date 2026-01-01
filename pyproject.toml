@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "currencyconsts"
+version = "1.0.0"
+description = "List of currency conversion constants from some base e.g. 100 * EUR"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "coledie"}
+]
+keywords = [
+    "currency",
+    "exchange",
+    "forex",
+    "conversion",
+    "money",
+    "finance",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    "requests>=2.25.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/currencymagic/currencymagic"
+Documentation = "https://github.com/currencymagic/currencymagic#readme"
+Repository = "https://github.com/currencymagic/currencymagic.git"
+Issues = "https://github.com/currencymagic/currencymagic/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
